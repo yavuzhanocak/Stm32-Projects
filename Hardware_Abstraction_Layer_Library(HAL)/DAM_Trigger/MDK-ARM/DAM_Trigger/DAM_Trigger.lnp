@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"dam_trigger\startup_stm32f100xb.o"
+"dam_trigger\main.o"
+"dam_trigger\stm32f1xx_it.o"
+"dam_trigger\stm32f1xx_hal_msp.o"
+"dam_trigger\stm32f1xx_hal_gpio_ex.o"
+"dam_trigger\stm32f1xx_hal_dac.o"
+"dam_trigger\stm32f1xx_hal_dac_ex.o"
+"dam_trigger\stm32f1xx_hal.o"
+"dam_trigger\stm32f1xx_hal_rcc.o"
+"dam_trigger\stm32f1xx_hal_rcc_ex.o"
+"dam_trigger\stm32f1xx_hal_gpio.o"
+"dam_trigger\stm32f1xx_hal_dma.o"
+"dam_trigger\stm32f1xx_hal_cortex.o"
+"dam_trigger\stm32f1xx_hal_pwr.o"
+"dam_trigger\stm32f1xx_hal_flash.o"
+"dam_trigger\stm32f1xx_hal_flash_ex.o"
+"dam_trigger\stm32f1xx_hal_exti.o"
+"dam_trigger\stm32f1xx_hal_tim.o"
+"dam_trigger\stm32f1xx_hal_tim_ex.o"
+"dam_trigger\system_stm32f1xx.o"
+--strict --scatter "DAM_Trigger\DAM_Trigger.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "DAM_Trigger.map" -o DAM_Trigger\DAM_Trigger.axf

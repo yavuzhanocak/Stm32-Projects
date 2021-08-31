@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"multi_adc_dma\startup_stm32f103xb.o"
+"multi_adc_dma\main.o"
+"multi_adc_dma\stm32f1xx_it.o"
+"multi_adc_dma\stm32f1xx_hal_msp.o"
+"multi_adc_dma\stm32f1xx_hal_gpio_ex.o"
+"multi_adc_dma\stm32f1xx_hal_adc.o"
+"multi_adc_dma\stm32f1xx_hal_adc_ex.o"
+"multi_adc_dma\stm32f1xx_hal.o"
+"multi_adc_dma\stm32f1xx_hal_rcc.o"
+"multi_adc_dma\stm32f1xx_hal_rcc_ex.o"
+"multi_adc_dma\stm32f1xx_hal_gpio.o"
+"multi_adc_dma\stm32f1xx_hal_dma.o"
+"multi_adc_dma\stm32f1xx_hal_cortex.o"
+"multi_adc_dma\stm32f1xx_hal_pwr.o"
+"multi_adc_dma\stm32f1xx_hal_flash.o"
+"multi_adc_dma\stm32f1xx_hal_flash_ex.o"
+"multi_adc_dma\stm32f1xx_hal_exti.o"
+"multi_adc_dma\stm32f1xx_hal_tim.o"
+"multi_adc_dma\stm32f1xx_hal_tim_ex.o"
+"multi_adc_dma\stm32f1xx_hal_uart.o"
+"multi_adc_dma\system_stm32f1xx.o"
+--strict --scatter "MULTI_ADC_DMA\MULTI_ADC_DMA.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "MULTI_ADC_DMA.map" -o MULTI_ADC_DMA\MULTI_ADC_DMA.axf
